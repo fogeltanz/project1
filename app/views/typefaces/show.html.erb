@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Familyname:</strong>
+  <%= @typeface.familyname %>
+</p>
+
+<p>
+  <strong>Designer:</strong>
+  <%= @typeface.designer %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @typeface.year %>
+</p>
+
+<%= link_to 'Edit', edit_typeface_path(@typeface) %> |
+<%= link_to 'Back', typefaces_path %>

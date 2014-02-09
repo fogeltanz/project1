@@ -1,0 +1,31 @@
+<h1>Listing typefaces</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Familyname</th>
+      <th>Designer</th>
+      <th>Year</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @typefaces.each do |typeface| %>
+      <tr>
+        <td><%= typeface.familyname %></td>
+        <td><%= typeface.designer %></td>
+        <td><%= typeface.year %></td>
+        <td><%= link_to 'Show', typeface %></td>
+        <td><%= link_to 'Edit', edit_typeface_path(typeface) %></td>
+        <td><%= link_to 'Destroy', typeface, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Typeface', new_typeface_path %>

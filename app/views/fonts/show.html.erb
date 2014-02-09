@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Weightname:</strong>
+  <%= @font.weightname %>
+</p>
+
+<p>
+  <strong>Optimalsize:</strong>
+  <%= @font.optimalsize %>
+</p>
+
+<p>
+  <strong>Typeface:</strong>
+  <%= @font.typeface_id %>
+</p>
+
+<%= link_to 'Edit', edit_font_path(@font) %> |
+<%= link_to 'Back', fonts_path %>
